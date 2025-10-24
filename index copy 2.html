@@ -26,10 +26,10 @@
   </header>
 
 
-<main class="mt-20 flex flex-col items-center min-h-80">
+  <main class="mt-20 flex flex-col items-center min-h-80 w-full">
 
-  <!-- Párrafo descriptivo -->
-  <p class="text-primary text-balance mb-4 text-center">Search through the complete <span class="italic">Magic: The Gathering</span> database for every card ever printed.</p>
+    <!-- Párrafo descriptivo -->
+    <p class="text-primary text-balance mb-4 text-center">Search through the complete <span class="italic">Magic: The Gathering</span> database for every card ever printed.</p>
 
     <!-- Botones de colores del juego -->
     <div class="flex space-x-8 xs:space-x-10 justify-center">
@@ -50,20 +50,69 @@
       <a href="https://magic.wizards.com/es" target="_blank"><img src="./images/magic_azul.svg" alt="mana_azul" class="w-8 xs:w-12 mask-radial-at-center mask-radial-from-50% mask-radial-to-80% hover:scale-120 transition-transform"></a>
     </div>
 
+    <section class="grid grid-cols-3 grid-rows-3 gap-2 m-4 w-full max-w-xl">
+
+      <!--Artefactos-->
+      <a href="https://magic.wizards.com/es" target="_blank" class="relative p-7 min-h-32 rounded-3xl overflow-hidden bg-gradient-to-br from-yellow-700 via-yellow-800 to-yellow-900 border border-yellow-600 flex flex-col items-start hover:scale-y-105 hover:contrast-125 transition col-span-2 group">
+        <span class="absolute top-2 left-2 text-gray-400 text-xs border rounded-xl px-1 py-0.5 group-hover:opacity-0 transform">Colorless artifacts</span>
+        <img src="./images/magic_fav.svg" alt="artifacts" class="absolute -bottom-3 -right-3 w-24 -rotate-30 opacity-70 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+        <span class="absolute bottom-2 left-2 text-gray-400 text-xl font-bold group-hover:translate-x-20 group-hover:-translate-y-10 group-hover:scale-200 transition-transform">Artifacts</span>
+      </a>
+
+      <!--Tierras-->
+      <a href="https://magic.wizards.com/es" target="_blank" class="relative p-7 min-h-32 rounded-3xl overflow-hidden bg-gradient-to-br from-green-500 via-green-700 to-green-900 border border-green-400 flex flex-col items-start hover:scale-y-105 hover:contrast-125 transition group">
+        <span class="absolute top-2 left-2 text-green-900 text-xs border rounded-xl px-1 py-0.5 group-hover:opacity-0 transform">Basic lands</span>
+        <img src="./images/magic_verde.svg" alt="lands" class="absolute -bottom-3 -right-3 w-24 -rotate-30 opacity-80 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+        <span class="absolute bottom-2 left-2 text-green-900 text-xl font-bold group-hover:translate-x-10 group-hover:-translate-y-10 group-hover:scale-200 transition-transform">Lands</span>
+      </a>
+
+      <!--Criaturas-->
+      <a href="https://magic.wizards.com/es" target="_blank" class="relative p-7 min-h-32 rounded-3xl overflow-hidden bg-gradient-to-br from-yellow-300 via-yellow-600 to-yellow-800 border border-yellow-500 flex flex-col items-start hover:scale-y-105 hover:contrast-125 transition group">
+        <span class="absolute top-2 left-2 text-yellow-900 text-xs border rounded-xl px-1 py-0.5 group-hover:opacity-0 transform">All types</span>
+        <img src="./images/magic_blanco.svg" alt="lands" class="absolute -bottom-3 -right-3 w-24 -rotate-30 opacity-80 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+        <span class="absolute bottom-2 left-2 text-yellow-900 text-xl font-bold group-hover:translate-x-10 group-hover:-translate-y-10 group-hover:scale-150 transition-transform">Creatures</span>
+      </a>
+
+      <!--Hechizos-->
+      <a href="https://magic.wizards.com/es" target="_blank" class="relative p-7 min-h-32 rounded-3xl overflow-hidden bg-gradient-to-br from-blue-400 via-blue-600 to-blue-900 border border-blue-400 flex flex-col items-start hover:scale-y-105 hover:contrast-125 transition col-span-2 group">
+        <span class="absolute top-2 left-2 text-blue-900 text-xs border rounded-xl px-1 py-0.5 group-hover:opacity-0 transform">Instants, sorceries and enchanments</span>
+        <img src="./images/magic_azul.svg" alt="spells" class="absolute -bottom-3 -right-3 w-24 -rotate-30 opacity-70 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+        <span class="absolute bottom-2 left-2 text-blue-900 text-xl font-bold group-hover:translate-x-20 group-hover:-translate-y-10 group-hover:scale-200 transition-transform">Spells</span>
+      </a>
+
+      <!--Planeswalkers-->
+      <a href="https://magic.wizards.com/es" target="_blank" class="relative p-7 min-h-32 rounded-3xl overflow-hidden bg-linear-to-r from-yellow-200 via-red-400 to-blue-600 border border-gray-400 flex flex-col items-start hover:scale-y-105 hover:contrast-125 transition col-span-3 group">
+        <span class="absolute top-2 left-2 text-gray-600 text-xs border rounded-xl px-1 py-0.5 group-hover:opacity-0 transform">All planeswalkers</span>
+
+        <img src="./images/magic_blanco.svg" alt="planeswalkers" class="absolute -bottom-3 -left-4 w-20 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+
+        <img src="./images/magic_verde.svg" alt="planeswalkers" class="absolute -bottom-3 left-29 w-20 opacity-70 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+
+        <img src="./images/magic_rojo.svg" alt="planeswalkers" class="absolute -bottom-3 left-62 w-20 opacity-70 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+
+        <img src="./images/magic_negro.svg" alt="planeswalkers" class="absolute -bottom-3 right-29 w-20 opacity-70 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+
+        <img src="./images/magic_azul.svg" alt="planeswalkers" class="absolute -bottom-3 -right-4 w-20 opacity-80 group-hover:-rotate-45 group-hover:scale-125 transition-transform">
+
+        <span class="absolute bottom-2 left-2 text-gray-600 text-xl font-bold group-hover:translate-x-55 group-hover:-translate-y-20 group-hover:scale-200 group-hover:text-gray-800 transition">Planeswalkers</span>
+      </a>
+
+    </section>
+
   </main>
 
 
-<footer class="py-4 mt-10 flex flex-col justify-center">
+  <footer class="py-4 mt-10 flex flex-col justify-center">
 
-  <!-- Redes sociales -->
-  <div class="flex gap-2 justify-center">
+    <!-- Redes sociales -->
+    <div class="flex gap-2 justify-center">
 
-    <!--GitHub-->
-    <a class="bg-gray-900 social-button" href="https://github.com/rubenmanero" target="_blank">
-      <svg class="size-6 xs:size-8">
-        <use xlink:href="./images/sprites.svg#github" />
-      </svg>
-    </a>
+      <!--GitHub-->
+      <a class="bg-gray-900 social-button" href="https://github.com/rubenmanero" target="_blank">
+        <svg class="size-6 xs:size-8">
+          <use xlink:href="./images/sprites.svg#github" />
+        </svg>
+      </a>
 
       <!--LinkedIn-->
       <a class="bg-white social-button" href="https://github.com/rubenmanero" target="_blank">
